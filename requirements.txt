@@ -1,0 +1,5 @@
+Flask==3.0.3
+
+# Only needed to (re)run data/prepare_demo_images.py, not for running the app.
+# Pillow==10.4.0
+gunicorn

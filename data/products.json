@@ -1,0 +1,612 @@
+[
+  {
+    "id": "shoes-020",
+    "name": "Court Sneaker",
+    "category": "shoes",
+    "category_label": "Shoes",
+    "retailer": "Nike",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 137,
+    "currency": "QAR",
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "color": "White",
+    "style": "oversized",
+    "visual_match": 81,
+    "product_url": "https://example.com/nike/shoes-020"
+  },
+  {
+    "id": "shoes-021",
+    "name": "Classic Runner",
+    "category": "shoes",
+    "category_label": "Shoes",
+    "retailer": "Adidas",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1597350584914-55bb62285896?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 147,
+    "currency": "QAR",
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "color": "White/Black",
+    "style": "oversized",
+    "visual_match": 88,
+    "product_url": "https://example.com/adidas/shoes-021"
+  },
+  {
+    "id": "shoes-022",
+    "name": "Low-Top Sneaker",
+    "category": "shoes",
+    "category_label": "Shoes",
+    "retailer": "H&M",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1544441892-794166f1e3be?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 77,
+    "currency": "QAR",
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "color": "Off-White",
+    "style": "minimal",
+    "visual_match": 78,
+    "product_url": "https://example.com/hm/shoes-022"
+  },
+  {
+    "id": "shoes-023",
+    "name": "Retro Trainer",
+    "category": "shoes",
+    "category_label": "Shoes",
+    "retailer": "Zara",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1608229751021-ed4bd8677753?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 159,
+    "currency": "QAR",
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "color": "Black",
+    "style": "casual",
+    "visual_match": 93,
+    "product_url": "https://example.com/zara/shoes-023"
+  },
+  {
+    "id": "shoes-024",
+    "name": "Everyday Sneaker",
+    "category": "shoes",
+    "category_label": "Shoes",
+    "retailer": "Temu",
+    "qatar_store": false,
+    "image": "https://images.unsplash.com/photo-1625860191460-10a66c7384fb?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 41,
+    "currency": "QAR",
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "color": "White",
+    "style": "classic",
+    "visual_match": 74,
+    "product_url": "https://example.com/temu/shoes-024"
+  },
+  {
+    "id": "shoes-025",
+    "name": "Canvas Trainer",
+    "category": "shoes",
+    "category_label": "Shoes",
+    "retailer": "Nike",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1626379616459-b2ce1d9decbc?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 179,
+    "currency": "QAR",
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "color": "White/Black",
+    "style": "casual",
+    "visual_match": 85,
+    "product_url": "https://example.com/nike/shoes-025"
+  },
+  {
+    "id": "shoes-026",
+    "name": "Basic Sneaker",
+    "category": "shoes",
+    "category_label": "Shoes",
+    "retailer": "Adidas",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 157,
+    "currency": "QAR",
+    "sizes": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "color": "Off-White",
+    "style": "streetwear",
+    "visual_match": 81,
+    "product_url": "https://example.com/adidas/shoes-026"
+  },
+  {
+    "id": "bag-027",
+    "name": "Canvas Tote",
+    "category": "bag",
+    "category_label": "Bag",
+    "retailer": "Zara",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1574365569389-a10d488ca3fb?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 131,
+    "currency": "QAR",
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Black",
+    "style": "casual",
+    "visual_match": 96,
+    "product_url": "https://example.com/zara/bag-027"
+  },
+  {
+    "id": "bag-028",
+    "name": "Crossbody Bag",
+    "category": "bag",
+    "category_label": "Bag",
+    "retailer": "H&M",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 79,
+    "currency": "QAR",
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Sand",
+    "style": "minimal",
+    "visual_match": 80,
+    "product_url": "https://example.com/hm/bag-028"
+  },
+  {
+    "id": "bag-029",
+    "name": "Structured Tote",
+    "category": "bag",
+    "category_label": "Bag",
+    "retailer": "Max",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1578237493287-8d4d2b03591a?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 43,
+    "currency": "QAR",
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Stone",
+    "style": "casual",
+    "visual_match": 77,
+    "product_url": "https://example.com/max/bag-029"
+  },
+  {
+    "id": "bag-030",
+    "name": "Mini Shoulder Bag",
+    "category": "bag",
+    "category_label": "Bag",
+    "retailer": "SHEIN",
+    "qatar_store": false,
+    "image": "https://images.unsplash.com/photo-1548863227-3af567fc3b27?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 63,
+    "currency": "QAR",
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Brown",
+    "style": "relaxed",
+    "visual_match": 86,
+    "product_url": "https://example.com/shein/bag-030"
+  },
+  {
+    "id": "bag-031",
+    "name": "Everyday Backpack",
+    "category": "bag",
+    "category_label": "Bag",
+    "retailer": "Temu",
+    "qatar_store": false,
+    "image": "https://images.unsplash.com/photo-1630381260512-e3fe55c11973?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 61,
+    "currency": "QAR",
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Black",
+    "style": "oversized",
+    "visual_match": 79,
+    "product_url": "https://example.com/temu/bag-031"
+  },
+  {
+    "id": "bag-032",
+    "name": "Basic Tote",
+    "category": "bag",
+    "category_label": "Bag",
+    "retailer": "Zara",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1621466550398-ac8062907657?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 147,
+    "currency": "QAR",
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Sand",
+    "style": "classic",
+    "visual_match": 80,
+    "product_url": "https://example.com/zara/bag-032"
+  },
+  {
+    "id": "watch-033",
+    "name": "Minimal Steel Watch",
+    "category": "watch",
+    "category_label": "Watch",
+    "retailer": "Zara",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 191,
+    "currency": "QAR",
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Black",
+    "style": "oversized",
+    "visual_match": 87,
+    "product_url": "https://example.com/zara/watch-033"
+  },
+  {
+    "id": "watch-034",
+    "name": "Classic Leather Strap Watch",
+    "category": "watch",
+    "category_label": "Watch",
+    "retailer": "H&M",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 75,
+    "currency": "QAR",
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Silver",
+    "style": "casual",
+    "visual_match": 93,
+    "product_url": "https://example.com/hm/watch-034"
+  },
+  {
+    "id": "watch-035",
+    "name": "Sport Watch",
+    "category": "watch",
+    "category_label": "Watch",
+    "retailer": "Max",
+    "qatar_store": true,
+    "image": "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 39,
+    "currency": "QAR",
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Brown",
+    "style": "casual",
+    "visual_match": 75,
+    "product_url": "https://example.com/max/watch-035"
+  },
+  {
+    "id": "watch-036",
+    "name": "Round Dial Watch",
+    "category": "watch",
+    "category_label": "Watch",
+    "retailer": "SHEIN",
+    "qatar_store": false,
+    "image": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 49,
+    "currency": "QAR",
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Gold",
+    "style": "casual",
+    "visual_match": 81,
+    "product_url": "https://example.com/shein/watch-036"
+  },
+  {
+    "id": "watch-037",
+    "name": "Basic Analog Watch",
+    "category": "watch",
+    "category_label": "Watch",
+    "retailer": "Temu",
+    "qatar_store": false,
+    "image": "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600&h=750&fit=crop&crop=entropy&auto=format&q=80",
+    "price": 47,
+    "currency": "QAR",
+    "sizes": [
+      "One Size"
+    ],
+    "color": "Black",
+    "style": "classic",
+    "visual_match": 73,
+    "product_url": "https://example.com/temu/watch-037"
+  },
+  {
+    "id": "shirt-101",
+    "name": "Slim-Fit Oxford Shirt",
+    "category": "shirt",
+    "category_label": "Shirt",
+    "retailer": "H&M",
+    "qatar_store": true,
+    "image": "/static/images/products/shirt-101.jpg",
+    "price": 200,
+    "currency": "QAR",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "White",
+    "style": "slim",
+    "visual_match": 95,
+    "product_url": "https://www2.hm.com/en_qa/productpage.html"
+  },
+  {
+    "id": "shirt-102",
+    "name": "Regular-Fit Poplin Shirt",
+    "category": "shirt",
+    "category_label": "Shirt",
+    "retailer": "Zara",
+    "qatar_store": true,
+    "image": "/static/images/products/shirt-102.jpg",
+    "price": 180,
+    "currency": "QAR",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "White",
+    "style": "regular",
+    "visual_match": 91,
+    "product_url": "https://www.zara.com/qa/en/shirt-p-search.html"
+  },
+  {
+    "id": "shirt-103",
+    "name": "Classic-Fit Business Shirt",
+    "category": "shirt",
+    "category_label": "Shirt",
+    "retailer": "Marks & Spencer",
+    "qatar_store": true,
+    "image": "/static/images/products/shirt-103.jpg",
+    "price": 165,
+    "currency": "QAR",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "White",
+    "style": "classic",
+    "visual_match": 87,
+    "product_url": "https://www.marksandspencer.com/qa/shirts"
+  },
+  {
+    "id": "shirt-104",
+    "name": "Easy-Care Stretch Shirt",
+    "category": "shirt",
+    "category_label": "Shirt",
+    "retailer": "Next",
+    "qatar_store": true,
+    "image": "/static/images/products/shirt-104.jpg",
+    "price": 150,
+    "currency": "QAR",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "White",
+    "style": "tailored",
+    "visual_match": 83,
+    "product_url": "https://www.next.com.qa/en/shirts"
+  },
+  {
+    "id": "shirt-105",
+    "name": "Tailored Cotton Shirt",
+    "category": "shirt",
+    "category_label": "Shirt",
+    "retailer": "ASOS Design",
+    "qatar_store": false,
+    "image": "/static/images/products/shirt-105.jpg",
+    "price": 135,
+    "currency": "QAR",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "White",
+    "style": "tailored",
+    "visual_match": 79,
+    "product_url": "https://www.asos.com/men/shirts"
+  },
+  {
+    "id": "shirt-106",
+    "name": "Essential Button-Down Shirt",
+    "category": "shirt",
+    "category_label": "Shirt",
+    "retailer": "Uniqlo",
+    "qatar_store": true,
+    "image": "/static/images/products/shirt-106.jpg",
+    "price": 120,
+    "currency": "QAR",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "color": "White",
+    "style": "casual",
+    "visual_match": 74,
+    "product_url": "https://www.uniqlo.com/qa/en/men/shirts"
+  },
+  {
+    "id": "pants-101",
+    "name": "Slim-Fit Tapered Trousers",
+    "category": "pants",
+    "category_label": "Pants",
+    "retailer": "H&M",
+    "qatar_store": true,
+    "image": "/static/images/products/pants-101.jpg",
+    "price": 300,
+    "currency": "QAR",
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "color": "Black",
+    "style": "slim",
+    "visual_match": 93,
+    "product_url": "https://www2.hm.com/en_qa/productpage.html"
+  },
+  {
+    "id": "pants-102",
+    "name": "Straight-Leg Smart Trousers",
+    "category": "pants",
+    "category_label": "Pants",
+    "retailer": "Massimo Dutti",
+    "qatar_store": true,
+    "image": "/static/images/products/pants-102.jpg",
+    "price": 270,
+    "currency": "QAR",
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "color": "Black",
+    "style": "straight",
+    "visual_match": 89,
+    "product_url": "https://www.massimodutti.com/qa/trousers"
+  },
+  {
+    "id": "pants-103",
+    "name": "Flat-Front Straight-Leg Trousers",
+    "category": "pants",
+    "category_label": "Pants",
+    "retailer": "Simon Jersey",
+    "qatar_store": false,
+    "image": "/static/images/products/pants-103.jpg",
+    "price": 245,
+    "currency": "QAR",
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "color": "Black",
+    "style": "straight",
+    "visual_match": 85,
+    "product_url": "https://www.simonjersey.com/mens-trousers"
+  },
+  {
+    "id": "pants-104",
+    "name": "Regular-Fit Stretch Smart Trousers",
+    "category": "pants",
+    "category_label": "Pants",
+    "retailer": "Zara",
+    "qatar_store": true,
+    "image": "/static/images/products/pants-104.jpg",
+    "price": 220,
+    "currency": "QAR",
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "color": "Black",
+    "style": "regular",
+    "visual_match": 81,
+    "product_url": "https://www.zara.com/qa/en/trousers-p-search.html"
+  },
+  {
+    "id": "pants-105",
+    "name": "Skinny Smart Trousers",
+    "category": "pants",
+    "category_label": "Pants",
+    "retailer": "ASOS Design",
+    "qatar_store": false,
+    "image": "/static/images/products/pants-105.jpg",
+    "price": 200,
+    "currency": "QAR",
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "color": "Black",
+    "style": "skinny",
+    "visual_match": 76,
+    "product_url": "https://www.asos.com/men/trousers"
+  },
+  {
+    "id": "pants-106",
+    "name": "Regular Fit Trousers",
+    "category": "pants",
+    "category_label": "Pants",
+    "retailer": "Next",
+    "qatar_store": true,
+    "image": "/static/images/products/pants-106.jpg",
+    "price": 180,
+    "currency": "QAR",
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "color": "Black",
+    "style": "regular",
+    "visual_match": 71,
+    "product_url": "https://www.next.com.qa/en/trousers"
+  }
+]

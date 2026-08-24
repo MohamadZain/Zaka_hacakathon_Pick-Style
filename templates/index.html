@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fetch — You see it. You choose it. AI finds the way.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <div class="topbar__left">
+      <button class="back-btn hidden" id="back-btn" aria-label="Go back">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+      </button>
+      <div class="logo" data-nav="landing">Fetch<span class="logo__dot">.</span></div>
+    </div>
+    <img class="topbar__ref hidden" id="topbar-ref-thumb" src="" alt="Your reference look">
+    <div class="topbar__step" id="step-indicator" aria-hidden="true"></div>
+  </div>
+</header>
+
+<main id="app">
+
+  <!-- ============ SCREEN 1 — LANDING ============ -->
+  <section class="screen screen--landing active" id="screen-landing" data-screen="landing">
+    <div class="landing__grid">
+      <div class="landing__copy">
+        <p class="eyebrow">AI shopping decision engine</p>
+        <h1 class="display-xl">See something<br>you want?</h1>
+        <p class="landing__sub">Upload it. Choose exactly what you need. Set your budget.
+          Let AI find your best options.</p>
+        <button class="btn btn--primary btn--lg" id="cta-upload">Upload Image</button>
+        <p class="landing__hint">Find what you want without checking store after store.</p>
+      </div>
+      <div class="landing__visual" aria-hidden="true">
+        <div class="tag-stack">
+          <div class="swing-tag swing-tag--1">
+            <span class="swing-tag__hole"></span>
+            <span class="swing-tag__label">Oversized Tee</span>
+            <span class="swing-tag__price">69 QAR</span>
+          </div>
+          <div class="swing-tag swing-tag--2">
+            <span class="swing-tag__hole"></span>
+            <span class="swing-tag__label">Wide-Leg Trouser</span>
+            <span class="swing-tag__price">119 QAR</span>
+          </div>
+          <div class="swing-tag swing-tag--3">
+            <span class="swing-tag__hole"></span>
+            <span class="swing-tag__label">Match Score</span>
+            <span class="swing-tag__price">94%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="tagline">"You see it. You choose it. AI finds the way."</p>
+  </section>
+
+  <!-- ============ SCREEN 2 — UPLOAD + DETECT + SELECT ============ -->
+  <section class="screen screen--upload" id="screen-upload" data-screen="upload">
+    <div class="panel">
+
+      <div id="upload-stage">
+        <p class="eyebrow">Step 1</p>
+        <h2 class="display-lg">Show us the look</h2>
+        <p class="panel__sub">Drop in a photo, a screenshot, anything you found online.</p>
+
+        <label class="dropzone" id="dropzone" for="file-input">
+          <input type="file" id="file-input" accept="image/*" hidden>
+          <div class="dropzone__icon">＋</div>
+          <div class="dropzone__text">
+            <strong>Click to upload</strong>
+            <span>or drag an image here</span>
+          </div>
+        </label>
+
+        <button class="btn btn--ghost" id="use-demo-image">Use demo image instead</button>
+      </div>
+
+      <div id="detect-stage" class="hidden">
+        <div class="detect-layout">
+          <div class="detect-layout__image">
+            <img id="uploaded-preview" src="" alt="Uploaded reference">
+          </div>
+          <div class="detect-layout__panel">
+            <p class="eyebrow">Step 2</p>
+            <h2 class="display-md">What are you looking for?</h2>
+            <p class="panel__sub">You don't have to buy the whole look.</p>
+
+            <div id="low-confidence-note" class="notice hidden">
+              I'm not fully sure what this item is — tap to confirm what you see.
+            </div>
+
+            <ul class="item-list" id="item-list"></ul>
+
+            <button class="btn btn--primary" id="cta-continue-to-sizes" disabled>Continue</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 3 — SIZES ============ -->
+  <section class="screen screen--sizes" id="screen-sizes" data-screen="sizes">
+    <div class="panel panel--narrow">
+      <p class="eyebrow">Step 3</p>
+      <h2 class="display-lg">Your sizes</h2>
+      <p class="panel__sub">Only the items you selected need a size.</p>
+
+      <div id="size-groups"></div>
+
+      <button class="btn btn--primary" id="cta-sizes-continue">Continue</button>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 4 — BUDGET + SHOPPING SOURCE ============ -->
+  <section class="screen screen--budget" id="screen-budget" data-screen="budget">
+    <div class="panel panel--narrow">
+      <p class="eyebrow">Step 4</p>
+      <h2 class="display-lg">Set your budget</h2>
+
+      <div class="fielsd-block">
+        <label class="field-label" for="budget-min">Overall Budget Range</label>
+        <div class="budget-row">
+          <div class="budget-input-group">
+            <span class="budget-currency">QAR</span>
+            <input type="number" id="budget-min" min="0" max="10000" step="10" value="50" class="budget-input">
+            <span class="budget-separator">—</span>
+            <input type="number" id="budget-max" min="0" max="10000" step="10" value="600" class="budget-input">
+            <span class="budget-currency">QAR</span>
+          </div>
+        </div>
+        <div class="budget-presets">
+          <button class="chip budget-preset" data-min="50" data-max="200">50-200 QAR</button>
+          <button class="chip budget-preset" data-min="100" data-max="400">100-400 QAR</button>
+          <button class="chip budget-preset" data-min="300" data-max="600">300-600 QAR</button>
+          <button class="chip budget-preset" data-min="400" data-max="1000">400-1000 QAR</button>
+        </div>
+      </div>
+
+      <!-- Advanced Button and Section -->
+      <div class="field-block">
+        <div class="advanced-header">
+          <button class="btn btn--ghost advanced-toggle" id="advanced-toggle">
+            <span class="advanced-toggle-icon">▶</span> ADVANCED
+          </button>
+          <span class="advanced-summary" id="advanced-summary">Not entered</span>
+        </div>
+        
+        <div class="advanced-section hidden" id="advanced-section">
+          <p class="advanced-subtitle">Set individual budgets for each item (optional)</p>
+          <p class="advanced-hint">These values help guide the recommendation, but the overall budget range is the final constraint.</p>
+          <div class="advanced-items" id="advanced-items"></div>
+          <div class="advanced-total">
+            <span class="advanced-total-label">Total Allocated:</span>
+            <span class="advanced-total-value" id="advanced-total-value">0 QAR</span>
+          </div>
+          <!-- Warning message for budget validation (non-blocking) -->
+          <div class="advanced-warning hidden" id="advanced-warning">
+            <span class="advanced-warning-icon">⚠️</span>
+            <span class="advanced-warning-text" id="advanced-warning-text"></span>
+          </div>
+          <div class="advanced-actions">
+            <button class="btn btn--secondary advanced-distribute" id="advanced-distribute">Distribute Evenly</button>
+            <button class="btn btn--secondary advanced-reset" id="advanced-reset">Reset All</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="field-block">
+        <span class="field-label">Where should we look?</span>
+        <div class="chip-group" id="source-group">
+          <button class="chip chip--active" data-value="all">All Stores</button>
+          <button class="chip" data-value="online">Online</button>
+          <button class="chip" data-value="qatar">Qatar Stores</button>
+        </div>
+      </div>
+
+      <button class="btn btn--primary" id="cta-find-options">Analyze &amp; Find Options</button>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 5 — ANALYZE ============ -->
+  <section class="screen screen--analyze" id="screen-analyze" data-screen="analyze">
+    <div class="analyze-box">
+      <h2 class="display-md">Analyzing your selection…</h2>
+      <ul class="checklist" id="analyze-checklist">
+        <li data-delay="0">Understanding your items</li>
+        <li data-delay="450">Checking sizes</li>
+        <li data-delay="900">Comparing products</li>
+        <li data-delay="1350">Building your best options</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 6 — RESULTS ============ -->
+  <section class="screen screen--results" id="screen-results" data-screen="results">
+    <div class="results-header">
+      <p class="eyebrow">Your options</p>
+      <h2 class="display-lg">Your Top Matches</h2>
+
+      <div class="summary-strip" id="summary-strip"></div>
+
+      <div class="mode-toggle" id="mode-toggle">
+        <button class="mode-toggle__btn mode-toggle__btn--active" data-mode="online">Shop Online</button>
+        <button class="mode-toggle__btn" data-mode="store">Shop In Store</button>
+      </div>
+    </div>
+
+    <div id="results-online">
+      <div class="recalc-banner hidden" id="recalc-banner"></div>
+
+      <div class="result-tabs" id="result-tabs">
+        <button class="result-tab result-tab--active" data-tab="closest_match">Closest Match</button>
+        <button class="result-tab" data-tab="best_value">Best Value</button>
+        <button class="result-tab" data-tab="best_price">Best Price</button>
+      </div>
+
+      <div class="result-cards" id="result-cards"></div>
+
+      <div class="budget-editor">
+        <p class="budget-editor__label">Change your budget</p>
+        <div class="budget-row">
+          <div class="budget-input-group">
+            <span class="budget-currency">QAR</span>
+            <input type="number" id="budget-min-2" min="0" max="10000" step="10" value="50" class="budget-input">
+            <span class="budget-separator">—</span>
+            <input type="number" id="budget-max-2" min="0" max="10000" step="10" value="600" class="budget-input">
+            <span class="budget-currency">QAR</span>
+          </div>
+        </div>
+        <button class="btn btn--primary" id="cta-recalculate">Recalculate</button>
+      </div>
+    </div>
+
+    <div id="results-store" class="hidden">
+      <p class="panel__sub">Same look, found near you.</p>
+      <div class="mall-list" id="mall-list"></div>
+    </div>
+
+    <button class="btn btn--ghost" id="cta-start-over">Start a new search</button>
+  </section>
+
+</main>
+
+<!-- ============ PRODUCT DETAIL MODAL ============ -->
+<div class="modal-overlay hidden" id="product-modal">
+  <div class="modal">
+    <button class="modal__close" id="modal-close" aria-label="Close">×</button>
+    <div class="modal__content" id="modal-content"></div>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

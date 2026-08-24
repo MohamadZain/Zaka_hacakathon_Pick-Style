@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600">
+  <rect width="500" height="600" fill="#E4DFD1"/>
+  <rect x="150" y="90" width="200" height="180" rx="6" fill="#F7F5EE" stroke="#C9C2B0" stroke-width="1.5"/>
+  <text x="250" y="185" font-family="Georgia, serif" font-size="16" fill="#5B5646" text-anchor="middle">Oversized Shirt</text>
+  <rect x="160" y="280" width="180" height="220" rx="6" fill="#2B2822"/>
+  <text x="250" y="392" font-family="Georgia, serif" font-size="16" fill="#EFEBE1" text-anchor="middle">Wide-Leg Pants</text>
+  <rect x="170" y="510" width="160" height="60" rx="10" fill="#FBFAF5" stroke="#C9C2B0" stroke-width="1.5"/>
+  <text x="250" y="546" font-family="Georgia, serif" font-size="14" fill="#5B5646" text-anchor="middle">Sneakers</text>
+  <circle cx="352" cy="120" r="18" fill="#A8462D"/>
+  <text x="352" y="125" font-family="Georgia, serif" font-size="13" fill="#FBFAF5" text-anchor="middle">＋</text>
+  <text x="250" y="40" font-family="Georgia, serif" font-size="18" fill="#1C1912" text-anchor="middle" letter-spacing="1">REFERENCE LOOK</text>
+</svg>
