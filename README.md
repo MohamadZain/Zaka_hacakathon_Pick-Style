@@ -1,8 +1,8 @@
-# Pick&Style — AI Visual Shopping Assistant
+# Pick&Style — AI powered decision engine for shopping
 
 > **We compare. You decide.**
 
-Pick&Style is an AI-powered visual shopping assistant that helps users turn an image of something they like into relevant shopping options.
+Pick&Style is an AI powered decision engine for shopping that helps users turn an image of something they like into relevant shopping options.
 
 Upload a look, choose the items you want, add your sizes and budget, and compare different options across retailers.
 
